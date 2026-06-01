@@ -16,6 +16,10 @@ Asígnale como valor una string con unos de sus hobbies".
 """
 # Escribe tu código aquí
 
+hobbie = "patinar"
+name = "Adriana"
+teammate = "Lexy"
+teammate_hobbie = "programar"
 
 """
 --- Ejercicio 2 Concatenación ---
@@ -24,12 +28,16 @@ Imprime por consola el siguiente mensaje concatenando las variales anteriormente
 """
 # Escribe tu código aquí
 
+print("Soy " + name + " y en mis tiempos libres me gusta " + hobbie)
+
 """
 --- Ejercicio 3 f-strings ---
 Imprime por consola el siguiente mensaje usando f-strings para unir las frases de las variales anteriormente declaradas:
 "Ella es [teammate] y en sus tiempos libres le gusta [teammate-hobbie]"
 """
 # Escribe tu código aquí
+
+print(f"Ella es {teammate} y en sus tiempos libres le gusta {teammate_hobbie}")
 
 """
 --- Ejercicio 4 separación por comas ---
@@ -38,6 +46,8 @@ Imprime por consola el siguiente mensaje usando separación por comas para unir 
 """
 # Escribe tu código aquí
 
+print("Ella se llama", teammate, "y yo me llamo", name)
+
 """
 --- Ejercicio 5 separación con operador % ---
 Imprime por consola el siguiente mensaje usando separación con el operador % para unir las frases de las variales anteriormente declaradas:
@@ -45,11 +55,16 @@ Imprime por consola el siguiente mensaje usando separación con el operador % pa
 """
 # Escribe tu código aquí
 
+print("Además de programar, nos gusta %s y %s" % (hobbie, teammate_hobbie))
+
 """
 --- Ejercicio 6 input data ---
 Escribe dos variables que reciban por terminal un número cada una
 """
 # Escribe tu código aquí
+
+num_1 = input("Escribe un número")
+num_2 = input("Escribe nuevamente un número")
 
 """
 --- Ejercicio 7 ---
@@ -57,7 +72,10 @@ Imprime por consola el resultado de la suma de los dos número obtenidos anterio
 en un comentario de línea escribe lo que sucede. ¡Recuerda que puedes usar type() para indagar mas!
 """
 # Escribe tu código aquí
-# Escribe tu análisis aquí
+print(num_1 + num_2)
+print(type(num_1))
+print(type(num_2))
+# Escribe tu análisis aquí --> Los inputs devuelven siempre un string por lo tanto se concatena y no se suma
 
 """
 --- Ejercicio 6 conversión de strings ---
@@ -65,3 +83,4 @@ Transforma los valores recibidos en el ejercicio 6 a números
 Imprime por consola el resultado de la suma de los dos número obtenidos anteriormente
 """
 # Escribe tu código aquí
+print(int(num_1) + int(num_2))
